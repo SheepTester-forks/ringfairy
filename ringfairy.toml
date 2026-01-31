@@ -1,8 +1,8 @@
-base_url = "https://webring.domain.tld"
-ring_name = "Webring"
-ring_description = "A webring to connect member sites."
-ring_owner = "Webring Organization / Person"
-ring_owner_site = "https://domain.tld"
+base_url = "https://pink10000.github.io/ringfairy"
+ring_name = "upbring" # feel free to suggest new names
+ring_description = "friends"
+ring_owner = "pink10000"
+ring_owner_site = "https://pink10000.github.io"
 
 filepath_list = ["./websites.json"]   # Website list; should be a JSON file with 'name', 'url', etc 
 path_output = "./webring"           # Generated files will be saved in this folder.

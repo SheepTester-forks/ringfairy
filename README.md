@@ -57,7 +57,7 @@ If you decide to launch your own webring with this tool, let me know and I'll li
 
 - Download a release binary OR clone and build from source. 
 - Modify the `websites.json` (by default) file to include the details of the websites you want to include in the webring. Each website must be added to the list.
-- Modify the `config.json` (by default) file according to your needs. 
+- Modify the `ringfairy.toml` (by default) file according to your needs. 
 - (Optional) Customize pages by modifying the templates, located in the `data/templates` folder (by default). You can also use remote files as templates. See the "Templates" section below. 
 - (Optional) Add any additional files into the `data/assets` folder (by default). Everything in this folder will simply be copied over into the output directory. Here you can add extras like images, HTML/CSS, etc. 
 - Run `ringfairy` to generate the webring by writing HTML files containing the redirects. Each site will link to the next/previous site in the `websites.json` file, forming your webring!
@@ -138,6 +138,31 @@ The following tags are currently usable in templates:
 Right now, `{{ url }}` is a unique tag that only works in `redirect.html` for the next/previous links.
 
 ----------------------------
+
+## Example `websites.json`
+
+```json
+[
+	{
+    "name": "Example 2 Site",
+    "slug": "Example2",
+    "about": "Example Website 2!",
+    "url": "https://example2.com",
+    "rss": "https://example2.com/index.xml",
+    "owner": "owner 2"
+  },
+  {
+    "name": "Example 3 Site",
+    "slug": "Example3",
+    "about": "Example Website 3!",
+    "url": "https://example3.com",
+    "rss": "https://example3.com/rss/index.xml",
+    "atom": "https://example3.com/atom.xml",
+    "owner": "owner 3"
+  }
+]
+```
+
 
 <details>
   <summary>🍄</summary>
