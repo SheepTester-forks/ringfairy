@@ -23,7 +23,7 @@ console.log(`  Darkened: ${darkened}`);
 // Test 3: Gradient generation
 console.log('\nTest 3: Generate gradient');
 const gradient = gradientN('#000000', '#ffffff', 3);
-console.log(`  Gradient from black to white (5 steps): ${gradient.join(', ')}`);
+console.log(`  Gradient from black to white (3 intermediate steps): ${gradient.join(', ')}`);
 
 // Test 4: Oxocarbon color scheme
 console.log('\nTest 4: Oxocarbon color scheme');

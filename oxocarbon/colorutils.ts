@@ -304,7 +304,7 @@ export function darken(c: Tuple3, n: number): Tuple3 {
 
 export function saturate(c: Tuple3, n: number): Tuple3 {
   const s = linearTween(c[1], 100);
-  return [s(n), c[1], c[2]];
+  return [c[0], s(n), c[2]];
 }
 
 export function desaturate(c: Tuple3, n: number): Tuple3 {
