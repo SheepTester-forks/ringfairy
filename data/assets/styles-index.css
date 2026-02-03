@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Comic Mono";
+  font-weight: normal;
+  src: url(./ComicMono.ttf);
+}
+
+@font-face {
+  font-family: "Comic Mono";
+  font-weight: bold;
+  src: url(./ComicMono-Bold.ttf);
+}
+
 :root {
   color-scheme: dark;
 
@@ -35,8 +47,8 @@ body {
 
 body {
   /* Tailwind default monospace stack, from Jacob's website */
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: "Comic Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
   line-height: 1.1;
   background-color: #1c1c1c;
   color: var(--base05);
