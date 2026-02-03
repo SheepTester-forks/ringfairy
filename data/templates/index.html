@@ -23,6 +23,14 @@
         former).
       </p>
       <p>
+        github:
+        <a
+          style="color: var(--base11)"
+          href="https://github.com/pink10000/ringfairy"
+          >pink10000/ringfairy</a
+        >
+      </p>
+      <p>
         opml:
         <a style="color: var(--base11)" href="{{ opml }}">upbring.opml</a>
       </p>
@@ -44,17 +52,11 @@
       {% if sites %} {% for site in sites %}
       <p class="site">
         (<span class="keyword">link</span>
-        <a href="{{ site.website.url }}" target="_blank"
-          >{{ site.website.name }}</a
-        >
+        <a href="{{ site.website.url }}">{{ site.website.name }}</a>
         {% if site.website.rss %}
-        <br /><a class="symbol" href="{{ site.website.rss }}" target="_blank"
-          >'rss</a
-        >
+        <br /><a class="symbol" href="{{ site.website.rss }}">'rss</a>
         {% endif %} {% if site.website.atom %}
-        <br /><a class="symbol" href="{{ site.website.atom }}" target="_blank"
-          >'atom</a
-        >
+        <br /><a class="symbol" href="{{ site.website.atom }}">'atom</a>
         {% endif %}
         <br /><span class="string"
           >"{{ site.website.about | default(value="") }}"</span
@@ -68,6 +70,12 @@
         {% endfor %}
       </ul>
       {% endif %}
+      <p class="faded">
+        ; theme:
+        <a href="https://github.com/nyoom-engineering/oxocarbon.nvim"
+          >oxocarbon</a
+        >
+      </p>
     </div>
   </body>
 </html>

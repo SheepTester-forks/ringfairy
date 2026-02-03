@@ -88,3 +88,7 @@ a {
 .string {
   color: var(--base13);
 }
+
+.faded {
+  color: var(--base02);
+}
