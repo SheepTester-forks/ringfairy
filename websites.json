@@ -35,7 +35,14 @@
         "rss": "https://atarbinian.com/blog/index.xml",
         "owner": "atar13"
     },
-	{
+    {
+        "name": "by2",
+        "slug": "by2",
+        "about": "to be dun",
+        "url": "https://bschan9228.github.io",
+        "owner": "bschan9228"
+    },
+    {
         "name": "jerukan",
         "slug": "jerukan",
         "about": "personal site",
